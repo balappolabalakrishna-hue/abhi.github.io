@@ -7,120 +7,156 @@
 
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f6f8;
-            color: #333;
+            padding: 0;
+            background-color: #f4f6f8;
         }
 
-        header {
-            background: #0a3d62;
-            color: white;
-            padding: 30px 15px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 10px 0 5px;
-        }
-
-        header p {
-            margin: 0;
-            font-size: 16px;
-        }
-
-        section {
-            background: white;
-            margin: 15px;
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #ffffff;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
         }
 
         h2 {
-            color: #0a3d62;
-            border-bottom: 2px solid #eee;
+            color: #1e88e5;
+            border-bottom: 2px solid #1e88e5;
             padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
         }
 
         ul {
             padding-left: 20px;
         }
 
-        .skills span {
-            display: inline-block;
-            background: #0a3d62;
+        li {
+            margin-bottom: 6px;
+        }
+
+        .info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            margin: 4px 0;
+        }
+
+        /* Subscribe section */
+        .subscribe {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .subscribe input {
+            padding: 10px;
+            width: 250px;
+            max-width: 90%;
+            margin-bottom: 10px;
+        }
+
+        .subscribe button {
+            padding: 10px 20px;
+            background-color: #1e88e5;
             color: white;
-            padding: 6px 12px;
-            border-radius: 20px;
-            margin: 5px;
-            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subscribe button:hover {
+            background-color: #1565c0;
         }
 
         footer {
             text-align: center;
-            padding: 15px;
+            margin-top: 20px;
             font-size: 14px;
-            color: #666;
+            color: gray;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Balakrishna</h1>
-    <p>B.Tech (EEE) Student | Aspiring Ethical Hacker</p>
-</header>
+    <div class="container">
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am a B.Tech 2nd year Electrical and Electronics Engineering student.
-        I am passionate about technology, cybersecurity, and ethical hacking.
-        I am currently learning web development and security fundamentals.
-    </p>
-</section>
+        <h1>Balappola Balakrishna</h1>
 
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li><strong>B.Tech (EEE)</strong> – Methodist College of Engineering Science and Technology</li>
-        <li><strong>Diploma</strong> – Sri Sangameshwara Polytechnic College</li>
-        <li><strong>SSC</strong> – Sri Sai Krishna Talent School</li>
-    </ul>
-</section>
+        <div class="info">
+            <p><strong>Email:</strong> balappolabalakrishna@gmail.com</p>
+            <p><strong>Phone:</strong> 7207805011</p>
+            <p><strong>Location:</strong> Sangareddy, Telangana</p>
+        </div>
 
-<section>
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript (Basic)</span>
-        <span>Cybersecurity Basics</span>
-        <span>Networking</span>
-        <span>Linux Basics</span>
-        <span>Problem Solving</span>
+        <h2>Career Objective</h2>
+        <p>
+            I am looking for a challenging job with a rapidly growing organization that can
+            provide opportunities to improve my skills and knowledge while contributing to
+            the company’s growth.
+        </p>
+
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.Tech (EEE)</strong> – Methodist College of Engineering Science & Technology (Pursuing)</li>
+            <li><strong>Diploma</strong> – Sri Sangameshwara Polytechnic College (SBTET) – 7.0 CGPA</li>
+            <li><strong>SSC</strong> – Sri Sai Krishna Talent School – 8.0 CGPA</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul>
+            <li>Basic Computer Knowledge</li>
+            <li>HTML & CSS (Beginner)</li>
+            <li>Completed PGDCA</li>
+            <li>Quick Learner</li>
+            <li>Hardworking</li>
+        </ul>
+
+        <h2>Interests</h2>
+        <ul>
+            <li>Cybersecurity</li>
+            <li>Web Development</li>
+            <li>Learning New Technologies</li>
+        </ul>
+
+        <!-- Subscribe Section -->
+        <div class="subscribe">
+            <h2>Subscribe</h2>
+            <input type="email" id="email" placeholder="Enter your email" required><br>
+            <button onclick="subscribe()">Subscribe</button>
+        </div>
+
+        <footer>
+            © 2026 Balappola Balakrishna
+        </footer>
+
     </div>
-</section>
 
-<section>
-    <h2>Career Goal</h2>
-    <p>
-        My goal is to become an Ethical Hacker and work in cybersecurity,
-        protecting systems and networks from cyber threats.
-    </p>
-</section>
+    <!-- JavaScript -->
+    <script>
+        function subscribe() {
+            let email = document.getElementById("email").value;
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: balappolabalakrishna@gmail.com</p>
-    <p>Phone: 7207805011</p>
-</section>
-
-<footer>
-    © 2026 Balakrishna | Designed by Me
-</footer>
+            if (email === "") {
+                alert("❌ Please enter your email first!");
+            } else {
+                alert("✅ Thank you for subscribing!\nEmail: " + email);
+            }
+        }
+    </script>
 
 </body>
-  </html>
+</html>
